@@ -5,4 +5,35 @@
     <div class="row mb-2">
         <h2>Categories</h2>
     </div>
+    <table class="table table-striped table-bordered" style="width: 100%">
+        <thead>
+            <tr>
+                <th>
+                    Category name
+                </th>
+                <th>
+                    Display order
+                </th>
+                <th>
+                    Created date and time
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Category category in Model.categories)
+            {
+                <tr>
+                    <td>
+                        @category.Name
+                    </td>
+                    <td>
+                        @category.DisplayOrder
+                    </td>
+                    <td>
+                        @category.CreatedDateTime
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
