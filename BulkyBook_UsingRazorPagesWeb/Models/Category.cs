@@ -11,6 +11,6 @@ namespace BulkyBook_UsingRazorPagesWeb.Models
         [Required(ErrorMessage = "Please enter display order")]
         [Range(1, maximum: 100, ErrorMessage = "Display order can only be from 1 to 100")]
         public int? DisplayOrder { get; set; }
-        public DateTime CreatedDateTime { get; set; }
+        public DateTime CreatedDateTime { get; set; } = DateTime.Now;
     }
 }
