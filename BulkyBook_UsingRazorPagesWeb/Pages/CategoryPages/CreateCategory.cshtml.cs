@@ -26,6 +26,7 @@ namespace BulkyBook_UsingRazorPagesWeb.Pages.CategoryPages
             {
                 await db.Categories.AddAsync(category);
                 await db.SaveChangesAsync();
+                TempData["success"] = "Category created.";
                 return RedirectToPage("/CategoryPages/Index");
             }
             return Page();

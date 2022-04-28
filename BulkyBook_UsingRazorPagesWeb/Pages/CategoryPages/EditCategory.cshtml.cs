@@ -36,6 +36,7 @@ namespace BulkyBook_UsingRazorPagesWeb.Pages.CategoryPages
                 category.CreatedDateTime = DateTime.Now;
                 db.Categories.Update(category);
                 await db.SaveChangesAsync();
+                TempData["success"] = "Category updated.";
                 return RedirectToPage("/CategoryPages/Index");
             }
             return Page();

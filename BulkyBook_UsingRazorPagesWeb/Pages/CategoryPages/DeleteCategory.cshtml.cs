@@ -28,6 +28,7 @@ namespace BulkyBook_UsingRazorPagesWeb.Pages.CategoryPages
         {
             db.Remove(category);
             await db.SaveChangesAsync();
+            TempData["success"] = "Category deleted.";
             return RedirectToPage("/CategoryPages/Index");
         }
     }
