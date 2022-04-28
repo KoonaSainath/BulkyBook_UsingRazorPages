@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BulkyBook_UsingRazorPagesWeb.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BulkyBook_UsingRazorPagesWeb.Data
 {
